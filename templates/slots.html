@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book a Slot</title>
+</head>
+<body>
+    <h2>Book a Slot</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="center_id">Center ID:</label>
+        <input type="text" id="center_id" name="center_id"><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <label for="time_slot">Time Slot:</label>
+        <input type="text" id="time_slot" name="time_slot"><br><br>
+        <button type="submit">Book Slot</button>
+    </form>
+</body>
+</html>

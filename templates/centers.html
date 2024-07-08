@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vaccination Centers</title>
+</head>
+<body>
+    <h2>Vaccination Centers</h2>
+    <ul>
+        {% for center in centers %}
+            <li>{{ center.name }} - {{ center.working_hours }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'slots' %}">Book a Slot</a>
+</body>
+</html>
